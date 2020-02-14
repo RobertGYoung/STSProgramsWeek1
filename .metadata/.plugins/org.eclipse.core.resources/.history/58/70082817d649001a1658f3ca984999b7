@@ -1,0 +1,13 @@
+package Collections;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class HashAndTreeSets {
+public static void main(String[] args) {
+	Set<Integer> hashSet = new HashSet(10,11,12,13,14);
+	
+	
+	
+}
+}

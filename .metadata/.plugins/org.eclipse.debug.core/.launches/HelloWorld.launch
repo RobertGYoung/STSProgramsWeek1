@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Day03STSDemo/src/com/revature/sts02/HelloWorld.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.revature.sts02.HelloWorld"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="Robert&#13;&#10;Gregory&#13;&#10;Young,&#13;&#10;the son of Anita Young and Robert Young"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Day03STSDemo"/>
+</launchConfiguration>

@@ -1,0 +1,27 @@
+package com.revature.sts02;
+
+public class Student extends Person{
+
+		String course;
+		
+		public Student(String name, int age, String course) {
+			
+			super(name, age); //must be first in child constructors 
+			this.course=course;
+			
+			
+			
+		}
+		
+		public void display() {
+			super.display();
+			System.out.println("\nCouse:"+course);
+		}
+		
+		
+		public static void main(String[] args) {
+			Student student1 = new Student("Robert",21, "Java");
+			
+			student1.display();
+		}
+}

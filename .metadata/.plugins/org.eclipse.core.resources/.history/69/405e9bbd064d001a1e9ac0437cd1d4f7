@@ -1,0 +1,7 @@
+package com.revature.sts02;
+
+public interface Salary {
+	public abstract double peocessSalary(int workDays);
+	
+//	all methods must be abstract!
+}

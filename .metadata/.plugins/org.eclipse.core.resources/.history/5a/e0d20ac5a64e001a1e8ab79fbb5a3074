@@ -1,0 +1,15 @@
+package com.revature.day04.loggingEx;
+
+import java.util.logging.Logger;
+
+
+public class MyApp {
+	private static final Logger logger = LogManager.getLogger(MyApp.class);
+	
+	public static void main(String[] args) {
+		
+		
+	}
+	
+	
+}

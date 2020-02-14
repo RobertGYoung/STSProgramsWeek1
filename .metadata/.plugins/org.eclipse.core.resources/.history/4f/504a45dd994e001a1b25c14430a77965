@@ -1,0 +1,32 @@
+package com.revature.day04.comparable;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class PersonSort {
+
+	public static void main(String[] args) {
+		List<ComparablePerson> persons = new ArrayList<ComparablePerson>();
+
+		  ComparablePerson person1 = new ComparablePerson(59, "John", 40);
+		  ComparablePerson person2 = new ComparablePerson(67, "Roger", 25);
+		  ComparablePerson person3 = new ComparablePerson(45, "Steven", 30);
+		  ComparablePerson person4 = new ComparablePerson(3, "Alan", 90);
+		  persons.add(person1);
+		  persons.add(person2);
+		  persons.add(person3);
+		  
+		  Collections.sort(persons);
+		  System.out.println("Sorting on ID: " + persons);
+		  
+		  Collections.sort(persons, new PersonComparatorByAge());
+		  System.out.println("Sorting on Age");
+		  System.out.println(persons);
+		  
+		  
+		  Collections.sort(persons, new PersonComparatorByName());
+		  System.out.println("Sorting on name");
+		  System.out.println(persons);
+	}
+}

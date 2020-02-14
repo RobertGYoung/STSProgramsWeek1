@@ -1,0 +1,36 @@
+
+public class InsertionSort {
+	
+	public static void main(String[] args) {
+		
+	
+	int[] unsortedArr = {6, 4, 2, 1, 5, 3};
+	int [] sortedArr = new int[unsortedArr.length];
+	int temp1=0;
+	int temp2=0;
+	int counter=0;
+
+	
+	for(int i =0;i<unsortedArr.length;i++) {
+			
+			temp1=unsortedArr[i];
+			for(int j=0;j<counter;j++) {
+				if(temp1<sortedArr[j]) {
+					temp2=sortedArr[j];
+					sortedArr[j]=temp1;
+					temp1=temp2;
+				}
+				
+			}
+			sortedArr[i]=temp1;
+			counter++; 
+	}
+	System.out.print("[ ");
+	for(int i=0; i<sortedArr.length;i++) {
+	System.out.print(sortedArr[i]);
+	}
+	System.out.print(" ]");
+	}
+	
+
+}

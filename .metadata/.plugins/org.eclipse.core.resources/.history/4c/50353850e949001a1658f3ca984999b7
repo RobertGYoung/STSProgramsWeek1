@@ -1,0 +1,84 @@
+package EmployeeDatabse;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
+public class EmployeeManager {
+
+	public static void main(String[] args) {
+		
+		
+	
+		  
+		
+		
+		
+		Scanner read = new Scanner(System.in);
+		Employee firstEmployee = new Employee();
+		
+		firstEmployee.setName("Rob");
+		firstEmployee.setDepartment("HR");
+		firstEmployee.setAge(21);
+		firstEmployee.setSalary(50000.00);	
+		firstEmployee.addToDatabase();
+		
+		
+	
+		
+		
+		Employee secondEmployee = new Employee();
+		
+		secondEmployee.setName("Bill");
+		secondEmployee.setDepartment("HR");
+		secondEmployee.setAge(21);
+		secondEmployee.setSalary(50001.00);	
+		secondEmployee.addToDatabase();
+		
+		boolean loop = true;
+		while(loop==true) {
+		Employee newEmployee = new Employee();
+		String inputName;
+		int inputAge;
+		String inputDepartment;
+		double inputSalary;
+		String inputResponse;
+
+		System.out.println("Hello new employee, what is your name?");
+		inputName=read.nextLine();
+		System.out.println("Enter your age");
+		inputAge=Integer.parseInt(read.nextLine());
+		System.out.println("Enter your department:");
+		inputDepartment=read.nextLine();
+		System.out.println("Enter your salary:");
+		inputSalary=Double.parseDouble(read.nextLine());
+		
+		newEmployee.addToDatabase();
+
+		System.out.println("Would you like to see the database? [y/n]");
+		inputResponse=read.nextLine();
+			if(inputResponse=="y") {
+				System.out.println(Employee.database);
+				read.nextLine();
+				
+			}
+		
+		}
+	
+		
+		
+	
+	
+		
+		
+		
+		
+		
+		
+	}
+	
+}

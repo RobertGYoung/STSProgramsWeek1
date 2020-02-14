@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+import java.util.Arrays;
+
+public class ScannerSort {
+	public static void main(String[] args) {
+		
+	Scanner read = new Scanner(System.in);
+	
+	String[] values;
+	
+	
+	System.out.println("What are your values? Seperate with commas please!");
+	values= read.nextLine().split(",");
+	System.out.println(values);
+	
+
+			
+	}
+	
+}

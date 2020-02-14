@@ -1,0 +1,36 @@
+package EmployeeDatabse;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+
+public class EmployeeManager {
+
+	public static void main(String[] args) {
+		
+		
+		Set<Object> employeeSet = new HashSet(); //adds individual employee list to this 
+		
+		
+		
+		
+		Scanner read = new Scanner(System.in);
+		Employee firstEmployee = new Employee();
+		
+		firstEmployee.setName("Rob");
+		firstEmployee.setDepartment("HR");
+		firstEmployee.setAge(21);
+		firstEmployee.setSalary(50000.00);
+		
+		firstEmployee.addToInstanceList();
+		
+		employeeSet.add(firstEmployee.employeeList);
+		
+		
+		
+		
+	}
+	
+}

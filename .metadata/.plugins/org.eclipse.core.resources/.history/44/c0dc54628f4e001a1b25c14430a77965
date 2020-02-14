@@ -1,0 +1,21 @@
+package com.revature.sts06.collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapTest {
+	public static void main(String[] args) {
+		Map mapTest = new HashMap();
+		
+		mapTest.put(0, "Rob");
+		mapTest.put(1, "Jas");
+		mapTest.put(2, "Ezra");
+		mapTest.put(3, "Yong");
+		mapTest.put(4, "Henry");
+		
+		System.out.println(mapTest);
+		
+		
+	}
+
+}

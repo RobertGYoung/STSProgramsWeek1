@@ -1,0 +1,29 @@
+package EmployeeDatabse;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class EmployeeAddition {
+	
+	Set<Object> employeeSet = new HashSet();
+	List employeeList = new ArrayList();
+
+
+	public void addEmployeeToList() {
+		
+		employeeList.add(this.getName());
+		employeeList.add(this.getAge());
+		employeeList.add(this.getDepartment());
+		employeeList.add(this.getSalary());
+		
+	}
+
+	public void addEmployeeListToSet() {
+		employeeID=employeeSet.size();
+		employeeList.add(employeeID);
+		employeeSet.add(employeeList);
+	}
+
+}

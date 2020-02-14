@@ -1,0 +1,19 @@
+package Collections;
+import java.util.Map;
+import java.util.HashMap;
+
+public class HashMap {
+	public static void main(String[] args) {
+
+Map<Integer, String> map = new HashMap<Integer,String>();
+
+map.put(001, "Rob");
+map.put(002, "Rahb");
+
+for(Map.Entry m:map.entrySet())
+	System.out.println(m.getKey()+": " + m.getValue());
+
+
+	}
+
+}

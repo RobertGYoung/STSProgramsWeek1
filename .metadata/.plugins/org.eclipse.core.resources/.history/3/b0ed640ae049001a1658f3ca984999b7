@@ -1,0 +1,7 @@
+package EmployeeDatabse;
+
+public interface EmployeeSet {
+	
+	public abstract void addEmployee();
+
+}

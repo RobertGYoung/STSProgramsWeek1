@@ -1,0 +1,34 @@
+package com.revature.sts06.collections;
+import java.util.ArrayList;
+import java.util.List;
+
+import java.util.Iterator;
+
+import java.util.Collection;
+
+public class CollectionTest {
+	
+	public static void main(String[] args) {
+		
+	
+	List<Object> myList = new ArrayList<Object>();
+	
+	
+	myList.add(1);
+	myList.add(2);
+	myList.add(3);
+
+	Iterator myListItr = myList.iterator();
+	System.out.println("iterator loop---");
+	while(myListItr.hasNext()) {
+		System.out.println(myListItr.next());
+	}
+	System.out.println("---enhanced");
+	for(Object item:myList) {
+		System.out.println(item);
+	}
+	System.out.println("lamda for each----");
+	myList.forEach(list->{System.out.println(list);});
+	}
+	
+}

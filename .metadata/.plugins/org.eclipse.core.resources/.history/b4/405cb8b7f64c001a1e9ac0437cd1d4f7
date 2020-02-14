@@ -1,0 +1,46 @@
+package com.revature.sts02;
+
+import java.util.Arrays;
+public class TwoDArray {
+	
+	public static void main(String[] args) {
+		
+		int[] tempArray = new int[args.length];
+		int[][] twoDArray = new int[2][args.length/2+1];
+		
+		System.out.println("Check");
+		
+		for(int i=0;i<args.length-1;i++){
+			tempArray[i]=Integer.parseInt(args[i]);
+			System.out.print(tempArray[i]+" ");
+			}
+		System.out.println("");
+		if(tempArray.length%2!=0) {
+			System.out.println("Should be even amounts- even inputs will be in first level, odd inputs will be in second");
+		}
+		int counter=0;
+		
+		for(int i=0;i<tempArray.length;i=+2) {
+			
+			
+			twoDArray[0][counter]=tempArray[i];
+			System.out.print(twoDArray[0][counter]+" ");
+			counter++;
+			
+		}		
+			counter=0;
+//			for(int j =1;j<tempArray.length;j+=2) {
+//				twoDArray[1][j]=tempArray[counter];
+//				counter++;
+//			
+//			}
+//	
+//			System.out.println(twoDArray);
+			
+			
+			
+		}
+		
+	}
+
+

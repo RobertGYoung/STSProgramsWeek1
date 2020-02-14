@@ -1,0 +1,8 @@
+package com.revature.sts02;
+
+public class TestGC {
+	public static void main(String[] args) {
+		System.out.println);
+	}
+
+}

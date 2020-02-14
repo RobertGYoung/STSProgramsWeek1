@@ -1,0 +1,16 @@
+package com.revature.sts02;
+
+public class TestGC {
+	public static void main(String[] args) {
+		
+		System.out.println("Hello "+nameWithSpace(args));
+	}
+	public String nameWithSpace(String...name) {
+		String fullName="";
+		for(int i =0;i<name.length;i++) {
+			fullName = fullName+ " "+name[i];
+		}
+		return fullName;
+	}
+
+}

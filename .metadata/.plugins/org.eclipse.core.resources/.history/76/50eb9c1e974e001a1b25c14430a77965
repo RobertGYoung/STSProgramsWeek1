@@ -1,0 +1,15 @@
+package com.revature.sts06;
+
+public class PersonSort {
+
+	public static void main(String[] args) {
+		List<Person> persons = new ArrayList<Person>();
+
+		
+		  Collections.sort(persons);
+		  System.out.println("Sorting on Age: " + persons);
+		  Collections.sort(persons, new PersonComparator());
+		  System.out.println("Sorting on ID");
+		  System.out.println(persons)
+	}
+}

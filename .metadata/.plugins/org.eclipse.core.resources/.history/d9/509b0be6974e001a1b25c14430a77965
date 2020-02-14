@@ -1,0 +1,15 @@
+
+
+package com.revature.day04.comparable;
+import java.util.Comparator;
+
+public class PersonComparatorByAge implements Comparator{
+
+	
+		@Override
+		public int compare(Object person1, Object person2) {
+			Integer age1=((ComparablePerson) person1).getId();
+			Integer age2=((ComparablePerson) person2).getId();
+			return age1.compareTo(id2);
+		}
+	}

@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+
+public class ArrayListDemoWithInterfaces {
+	public static void main(String[] args) {
+		
+		List myList = new ArrayList();
+		
+		myList.add(1);
+		myList.add(2);
+		myList.add(3);
+		myList.add(4);
+		myList.add(5);
+		
+		List mySecondList= {101,102,103};
+		System.out.println("Size of List: "+myList.size());
+		
+		myList.remove(3);
+		System.out.println("Size of List after removal: "+myList.size());
+		
+		myList.addAll(5, c)
+
+
+		
+		
+		
+		
+		
+	}
+}

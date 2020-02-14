@@ -1,0 +1,17 @@
+
+public class Fibonacci {
+
+		public static void main(String[] args) {
+			
+			System.out.println(fibFunc(7));
+		}
+		
+		public static int fibFunc(int n) {
+			if(n<=2) {
+			return 1;
+			}
+			else {
+				return fibFunc(n-1)+fibFunc(n-2);
+			}
+		}
+}

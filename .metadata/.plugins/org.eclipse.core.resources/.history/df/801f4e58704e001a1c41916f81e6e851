@@ -1,0 +1,13 @@
+package com.revature.sts06;
+
+public class Application {
+	public static void main(String[] args) {
+		
+		Person p1 = new Person("Rob",21);
+		Person p2 = new Person("Blob",10);
+		
+		System.out.println("P1: "+p1.getName()+" Age: "+p1.getAge()+p2.getName()+p2.getAge());
+
+	
+	}
+}

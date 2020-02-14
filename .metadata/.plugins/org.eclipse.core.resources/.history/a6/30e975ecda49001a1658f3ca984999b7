@@ -1,0 +1,44 @@
+package Collections;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.Map;
+import java.util.HashMap;
+
+
+public class HashAndTreeSets {
+public static void main(String[] args) {
+Set s = new HashSet();
+
+s.add(1);
+
+s.add(10);
+
+s.add(3);
+
+s.add(5);
+
+s.add(2);
+
+s.add(1);
+
+s.add(null);
+
+System.out.println("Size:"+ s.size());
+
+for(Object a:s) {
+	System.out.println(a);
+}
+
+Map<Integer, String> map = new HashMap<Integer,String>();
+
+map.put(001, "Rob");
+map.put(002, "Rahb");
+
+for(Map.Entry m:map.entrySet())
+	System.out.println(m.getKey()+": " + m.getValue());
+
+
+
+	}
+}

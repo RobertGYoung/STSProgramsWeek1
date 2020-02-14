@@ -1,0 +1,44 @@
+package com.revature.sts02;
+
+import java.util.Arrays;
+public class TwoDArray {
+	
+	public static void main(String[] args) {
+		
+		int[] tempArray = new int[args.length];
+		int[][] twoDArray = new int[2][args.length/2];
+		
+		System.out.println("Check");
+		
+		for(int i=0;i<args.length;i++){
+			tempArray[i]=Integer.parseInt(args[i]);
+			System.out.print(tempArray[i]+" ");
+			}
+		System.out.println("");
+	
+		int counter=0;
+		
+		for(int i=0;i<=tempArray.length;i=+2) {
+			
+			
+			twoDArray[0][counter]=Integer.parseInt(args[i]);
+			System.out.print("first row includes: "+twoDArray[0][counter]+" ");
+			counter++;
+			
+		}		
+			
+//			for(int j =1;j<tempArray.length;j+=2) {
+//				twoDArray[1][j]=tempArray[counter];
+//				counter++;
+//			
+//			}
+//	
+//			System.out.println(twoDArray);
+			
+			
+			
+		}
+		
+	}
+
+

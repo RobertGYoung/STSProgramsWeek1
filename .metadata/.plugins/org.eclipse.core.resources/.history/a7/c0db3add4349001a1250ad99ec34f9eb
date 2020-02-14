@@ -1,0 +1,14 @@
+
+public class InsertionSort {
+	
+	int[] unsortedArr = {6, 4, 2, 1, 5, 3};
+	int [] sortedArr = new int[unsortedArr.length];
+	int temp1=0;
+	int temp2=0;
+	
+	unsortedArr[0]=sortedArr[0];
+	
+	
+	
+
+}

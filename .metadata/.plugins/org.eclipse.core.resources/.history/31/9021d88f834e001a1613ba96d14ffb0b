@@ -1,0 +1,66 @@
+package com.revature.sts06.collections;
+import java.util.ArrayList;
+import java.util.List;
+
+import java.util.Iterator;
+
+import java.util.Collection;
+import java.util.Comparator;
+
+public class CollectionTest {
+	
+	public static void main(String[] args, Comparator Integer) {
+		
+	
+	List<Object> myList = new ArrayList<Object>();
+	List<Object> mySecondList = new ArrayList<Object>();
+
+	
+	myList.add(1);
+	myList.add(2);
+	myList.add(3);
+	
+	mySecondList.add(101);
+	mySecondList.add(102);
+	mySecondList.add(103);
+	mySecondList.addAll(myList);
+
+	Iterator myListItr = myList.iterator();
+	System.out.println("iterator loop---");
+	while(myListItr.hasNext()) {
+		System.out.println(myListItr.next());
+	}
+	System.out.println("---enhanced for");
+	for(Object item:myList) {
+		System.out.println(item);
+	}
+	System.out.println("lamda for each----");
+	myList.forEach(list->{System.out.println(list);});
+	
+	System.out.println(mySecondList);
+	System.out.println("Empty:"+ mySecondList.isEmpty());
+	System.out.println("Does this have 101?:"+mySecondList.contains(101));
+	mySecondList.remove(mySecondList.get(0));
+	System.out.println("Does this have 101?:"+mySecondList.contains(101));
+
+	mySecondList.clear();
+	
+	System.out.println(mySecondList);
+	System.out.println("Empty: "+mySecondList.isEmpty());
+	
+	
+	List unSortedList = new ArrayList();
+	
+	unSortedList = 1,10,14,10,99,12,3,4,7,9;
+	
+	System.out.println("Unsorted: "+unSortedList);
+	
+	System.out.println(unSortedList);
+	
+	
+	}
+	
+	
+
+	
+}

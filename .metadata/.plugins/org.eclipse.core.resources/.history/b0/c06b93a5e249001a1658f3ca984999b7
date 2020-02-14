@@ -1,0 +1,9 @@
+package EmployeeDatabse;
+
+public class EmployeeAddition {
+	
+	public abstract void addEmployeeToList();
+	
+	public abstract void addEmployeeListToSet();
+
+}

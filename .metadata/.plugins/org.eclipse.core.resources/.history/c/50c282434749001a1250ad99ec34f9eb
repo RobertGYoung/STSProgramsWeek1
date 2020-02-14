@@ -1,0 +1,45 @@
+
+public class InsertionSort {
+
+	public static void main(String[] args) {
+
+		int[] unsortedArr = {6417 6628 256 1410 6618 3041 371 2924 4000 7090 9525 9431 6047 9735 6915 2329 2160 9415 6194 4715 3399 8058 7584 4041 7471 7569 5122 5867 78 1242 1715 1814 339 8775 8166 992 849 507 536 9480 2414 3601 9814 1644 1434 7194 8231 2921 736 7899 7637 2896 5545 5724 666 7345 7021 7128 1360 4607 3349 6847 6322 4198 2122 1917 9203 9988 7928 1818 9933 447 2186 249 9771 8938 2338 7646 8995 4392 9728 6428 6660 9918 9487 5909 6768 6083 8602 3858 5330 8962 9960 9024 5131 3252 9013 1892 2372 8401 8327 7945 6896 7225 6295 751 6353 6356 7523 1131 3611 7614 9781 9542 6063 179 1351 4271 5803 4566 3890 1253 2094 7627 9746 5772 2810 7188 5017 5585 3362 8221 5222 4430 3 1238 6729 8685 9298 5745 8312 9574 3766 2257 8248 3358 1537 7176 2124 9058 9986 6333 6360 9356 2139 3136 1575 8770 9508 2911 7089 7257 6369 9754 5924 5682 1683 2429 9087 5135 3898 2496 2973 8957 9615 8428 9564 5842 3486 8826 7950 412 3977 4256 9148 2935 8633 7105 8890 5509 9936 4069 7585 5513 377 9949 4461 9482 7996 9143 7653 1616 8819 8521 };
+				
+		int[] sortedArr = new int[unsortedArr.length];
+		
+		int temp1 = 0;
+		int counter = 0;
+
+		long time1;
+		long time2;
+		time1=System.nanoTime();
+		for (int i = 0; i < unsortedArr.length; i++) {
+
+			temp1 = unsortedArr[i];
+			for (int j = 0; j < counter; j++) {
+				if (temp1 < sortedArr[j]) {
+					int temp2 = sortedArr[j];
+					sortedArr[j] = temp1;
+					temp1 = temp2;
+				}
+
+			}
+			sortedArr[i] = temp1;
+			counter++;
+		}
+		System.out.print("[ ");
+		for (int i = 0; i < sortedArr.length; i++) {
+			System.out.print(sortedArr[i] + " ");
+		}
+		System.out.print(" ]");
+		time2=System.nanoTime();
+		
+		long timeElapsed= time2-time1;
+		long nanoSecondsElapsed = timeElapsed;
+		long milliSecondsElapsed = nanoSecondsElapsed/1000000;
+		
+		System.out.println();
+		System.out.println("Time Elapsed:"+ nanoSecondsElapsed +" or "+milliSecondsElapsed+" milliSeconds");
+	}
+
+}

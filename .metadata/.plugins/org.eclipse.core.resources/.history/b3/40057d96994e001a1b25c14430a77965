@@ -1,0 +1,17 @@
+package com.revature.day04.comparable;
+
+import java.util.Comparator;
+public class PersonComparatorByName implements Comparator {
+
+
+
+		
+			@Override
+			public int compare(Object person1, Object person2) {
+				String name1=((ComparablePerson) person1).geName();
+				String name2=((ComparablePerson) person2).getName();
+				return age1.compareTo(age2);
+			}
+		}
+
+}

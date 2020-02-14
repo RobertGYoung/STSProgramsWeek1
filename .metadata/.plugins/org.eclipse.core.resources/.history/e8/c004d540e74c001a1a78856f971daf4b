@@ -1,0 +1,28 @@
+
+public class Fibonacci {
+
+		public static void main(String[] args) {
+			long time1;
+			long time2;
+			time1=System.nanoTime();
+			System.out.println(fibFunc(51));
+			time2=System.nanoTime();
+			
+			long timeElapsed= time2-time1;
+			long nanoSecondsElapsed = timeElapsed;
+			long milliSecondsElapsed = nanoSecondsElapsed/1000000;
+			long secondsElapsed = milliSecondsElapsed/1000;
+			
+			
+			System.out.println("Time Elapsed:"+ nanoSecondsElapsed +"nano seconds or "+milliSecondsElapsed+" milliSeconds or "+secondsElapsed+" seconds");
+		}
+		
+		public static long fibFunc(long n) {
+			if(n<2) {
+			return 1;
+			}
+			else {
+				return fibFunc(n-1)+fibFunc(n-2);
+			}
+		}
+}
